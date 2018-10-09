@@ -1,9 +1,21 @@
 /* Style for the page */
 
-.container-fluid {
+.background-img {
     font-family: 'Montserrat', sans-serif;
     background-image: url('../images/background_sunset.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+
+.row {
+    
+}
+
+.col1 {
+    
+}
+
+.col2 {
+
 }
