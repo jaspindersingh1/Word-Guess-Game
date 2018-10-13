@@ -1,44 +1,41 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Hangman Game</title>
+	   
+	<!-- Bootstrap compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
 
-    <!-- My CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <!-- Google Font Family -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<div class="panel panel-default" style="max-width:400px;margin-left:auto; margin-right:auto; margin-top:100px;">
+  <div class="panel-body text-center">
 
-    <!-- Javascript reference link -->
-    <script src="assets/javascript/game.js"></script>
 
-    <title>Word Guess Game</title>
-  </head>
+    <h1> Let's play!</h1>
+      <div class="panel-body text-left">
 
-  <body>
-    <!--  -->
-    <div class="container-fluid background-img">
+          <!--•	PseudoCode: Hangman
+          •	Computer presents word with spaces in place of the letters.
+          •	Player guesses letters
+          •	When they answer correctly (or when they guess one of the letters) the computer fills in the corresponding letter
+          •	When they answer incorrectly, the computer logs the wrong letter on the screen so the user can see it, and then takes away one of their chances
+          •	The player gets 15 chances/guesses to get the word correct
+          •	The title of the page should give a hint as to the type of word the player is guessing i.e. rock n roll bands etc.-->
 
-      <div class="row">
-        <div class="col-md-6 col1">
-          
-        </div>
-        <div class="col-md-6 col2">
-          <button type="button" class="btn btn-info ">Click to play the game!</button>
-          <p id="game"></p> 
-        </div>
-      </div>
+          <Container=left justified>
+          <p>Guesses to go: <span id="guesses-left"></span></p>
+          <p>Wrong Guesses: <span id="wrong-guesses"></span></p>
+          <p>Player Wins: <span id="win-counter"></span></p>
+          <p>Player Losses: <span id="loss-counter"></span></p>
+          <h3 id="word-blank"></h3>
 
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+          <script src="./assets/javascript/game.js"></script>
+
+  </div>
+</div>
+
+</body>
 </html>
